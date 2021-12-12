@@ -1,0 +1,56 @@
+
+input{
+    margin-left: 40%;
+    margin-top: 5%;
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 2em;
+}
+
+ input:hover {
+    background-color: RoyalBlue;
+}
+
+#image-grid {
+    width: auto;
+    height: auto;
+    float:left
+}
+
+#image-grid .preview {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 10px;
+}
+
+#image-grid .preview::before {
+    content: 'cross';
+    display: none;
+}
+
+#image-grid .preview img {
+    height: 100%;
+    width: auto;
+}
+
+#image-grid .preview:hover {
+    background-image: red;
+    opacity: 0.3;
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+#image-grid .preview:hover::before {
+    display: inline;
+}
+
+
+
+
+
